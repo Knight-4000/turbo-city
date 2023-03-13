@@ -1,0 +1,155 @@
+.navbar{
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , 
+    url('https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/brick-wall.jpg?alt=media&token=865a7692-a1a9-42e2-bc4c-ab2094df78c2');
+    padding-top: 1vh;
+}
+
+.nav-background{background-color: #000;}
+
+.logo {
+    color: #fff;
+    animation: pulsate 1.5s infinite alternate;  
+    border: 0.2rem solid #FD349C;
+    border-radius: 2rem;
+    padding: 0.4em;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 
+    0 0 15px #FD349C, 0 0 20px #FD349C, 0 0 25px #FD349C, 
+    0 0 30px #FD349C, 0 0 35px #FD349C;
+  }
+
+  .nav-link{
+    color: #fff;
+    animation: pulsate 1.5s infinite alternate;  
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 
+    0 0 15px #FD349C, 0 0 20px #FD349C, 0 0 25px #FD349C, 
+    0 0 30px #FD349C, 0 0 35px #FD349C;
+  }
+
+  .mobile-link{
+    font-family: Montserrat;
+    color:#FD349C;
+    text-decoration: none;
+  }
+
+  .mobile-link:active, .mobile-link:focus, .nav-link:focus{
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 
+    0 0 15px #FD349C, 0 0 20px #FD349C, 0 0 25px #FD349C, 
+    0 0 30px #FD349C, 0 0 35px #FD349C;
+  }
+/* Added id of nav-hover to force hover properties to continue working after clicking link */
+  .nav-link:hover, #nav-hover:hover{
+    box-shadow: 0 0 0 3px #FD349C;
+    outline: none;
+    transition-duration: 0.6s;
+    transition-property: all;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  .nav-link:focus{
+    box-shadow: none;
+    outline: none;
+  }
+
+nav {
+    width: 100%;
+    height: 5em;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em;
+    z-index: 9999;
+}
+
+.burger-menu {
+    height: 50%;
+    margin-top: 0.65em;
+    padding-right: -2vw;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.burger-bar {
+    width: 2em;
+    height: 0.2em;
+    background-color: #FD349C;
+    border-radius: 0.5em;
+}
+
+.nav-menu {
+    background-color: #000;
+    width: 250px;
+    height: 90vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+    transition: 550ms;
+    z-index: 9;
+  }
+
+  .nav-menu-items {
+    z-index: 9999;
+    color: #FD349C;
+    font-family: Montserrat;
+    font-size: 2.075rem;
+    padding-top: 6vh;
+    cursor: pointer;
+  }
+
+  .logo {
+    color: #fff;
+    animation: pulsate 1.5s infinite alternate;  
+    border: 0.2rem solid #FD349C;
+    border-radius: 2rem;
+    padding: 0.4em;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 
+    0 0 15px #FD349C, 0 0 20px #FD349C, 0 0 25px #FD349C, 
+    0 0 30px #FD349C, 0 0 35px #FD349C;
+  }
+  
+/* ------------- sliding menu ------------------ */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inherit;
+}
+
+/* ----- animations--------- */
+/* clicked */
+.burger-bar.clicked:nth-child(1){
+    transform: rotate(45deg) translate(0.85em, 1.25em);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2){
+    transform: rotate(180deg) translate(-0.2em, -0.17em);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3){
+    transform: rotate(135deg) translate(-0.6em, 1em);
+    transition: ease-out 0.5s;
+}
+
+/* unclicked */
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
