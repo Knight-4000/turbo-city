@@ -9,6 +9,7 @@ import Event from './pages/Event';
 import Events from './pages/Events';
 import CreateStore from './pages/CreateStore';
 import CreateEvent from './pages/CreateEvent';
+import Footer from './components/Footer';
 function App() {
   return (
     <>
@@ -31,6 +32,7 @@ function App() {
             <Route path="/create-store" element={<CreateStore />} />
             <Route path="/create-event" element={<CreateEvent />} />
           </Routes>
+          <Footer />
       </Router>
     </>
   );
