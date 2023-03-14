@@ -5,6 +5,8 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Store from './pages/Store';
 import Event from './pages/Event';
+import CreateStore from './pages/CreateStore';
+import CreateEvent from './pages/CreateEvent';
 function App() {
   return (
     <>
@@ -14,6 +16,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/store" element={<Store />} />
             <Route path="/event" element={<Event />} />
+            <Route path="/create-store" element={<CreateStore />} />
+            <Route path="/create-event" element={<CreateEvent />} />
           </Routes>
       </Router>
     </>

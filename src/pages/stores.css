@@ -1,0 +1,91 @@
+.stores-main-background{ background: #9D00FF;}
+
+#cat-main-header, #cat-header{ font-family: Montserrat;}
+
+#cat-header{background-color: black;}
+
+#stores-card{min-height: 20vh;}
+
+.brand-wrapper{ 
+    margin: 5vh;
+    cursor: pointer;
+    background: transparent;
+}
+
+.hr-stores{
+    border: 0.5px solid #FD349C;
+    opacity: 1;
+}
+
+.store-image{
+    height: 20vh;
+    width: auto;
+    background-position: center top;
+}
+
+.outer{
+    min-height:100%;
+    display:flex;
+}
+
+.inner{margin: auto;}
+
+.stores-names{padding: 5vh 0;}
+
+#kay-kid-brand{
+    font-family: Gloock;
+    font-weight: bolder;
+    color: #FFD700;
+}
+
+#kay-kid-inf, #fun-fair-info{
+    font-family: Montserrat;
+    padding-bottom: 1vh;   
+}
+
+#kay-kid-tailor, #fun-fair-tailor{
+    font-family: Montserrat;
+    font-weight: 600;
+    padding-bottom: 2vh;
+    text-align: justify;
+}
+
+#relics-name, #wild-one-name, #fun-fair-name, #dawn-name, #music-world-name, #gold-sun-name, #kay-kid-brand, #one-hour-name{
+    font-size: 40px;
+}
+#fun-fair-brand{
+    font-family: Orbitron;
+    font-weight: bolder;
+    color: blue;
+}
+
+#dawn-name{
+    font-family: Genos;
+    color:#FD31C6;
+}
+
+#wild-one-name{
+    font-family: Shrikhand;
+    color: #F0373E;
+}
+
+#one-hour-name{
+    font-family: Anton;
+    color: #893BFF;
+}
+#music-world-name{
+    font-family: Yeseva One;
+    color: #E0DD7D;
+}
+
+#gold-sun-name{
+    font-family: Jim Nightshade;
+    color: #DBD026;
+}
+
+#relics-name{
+    font-family: Bangers;
+    background: linear-gradient(to bottom, #E4561D 0%, #F59317 30%, #FAE100 50%,#F59317 70%, #E4561D 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
