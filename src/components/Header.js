@@ -40,15 +40,15 @@ const Header = () => {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link id="nav-hover" className="nav-link" onClick={() => navigate('/')}>Home</Nav.Link>
-                <Nav.Link id="nav-hover" className="nav-link" onClick={() => navigate('/store')}>Store</Nav.Link>
-                <Nav.Link id="nav-hover" className="nav-link" onClick={() => navigate('/event')}>Event</Nav.Link>
+                <Nav.Link id="nav-hover" className="nav-link" onClick={() => navigate('/stores')}>Stores</Nav.Link>
+                <Nav.Link id="nav-hover" className="nav-link" onClick={() => navigate('/events')}>Events</Nav.Link>
             </Nav>
           </Navbar.Collapse>
           <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
             <ul className='nav-menu-items list-unstyled' onClick={showSidebar}>
               <li onClick={updateMenu}><a className="mobile-link" href="/">Home</a></li>
-              <li onClick={updateMenu}><a className="mobile-link" href="/store">Store</a></li>
-              <li onClick={updateMenu}><a className="mobile-link" href="/event">Event</a></li>
+              <li onClick={updateMenu}><a className="mobile-link" href="/stores">Stores</a></li>
+              <li onClick={updateMenu}><a className="mobile-link" href="/events">Events</a></li>
             </ul>
           </nav>
         </Container>

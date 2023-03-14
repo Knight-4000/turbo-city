@@ -1,0 +1,22 @@
+#button-tooltip{font-family: Montserrat;}
+
+.curbside-button:hover, .curbside-button:active, .curbside-button:focus{
+    background: transparent;
+    color: #000;
+}
+
+.curbside-button{
+    cursor: arrow;
+    background: #fff;
+    color: #000;
+    border: none;
+    font-size: 24px;
+}
+
+.btn-primary:focus,.btn-primary:active, 
+.btn-primary:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active{
+    box-shadow: none!important;
+    background-color: #fff!important;
+    outline: 0;
+}

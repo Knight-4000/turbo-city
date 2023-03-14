@@ -6,6 +6,7 @@ import { AiOutlineClockCircle } from "react-icons/ai"
 import { BsTelephone } from "react-icons/bs"
 import { db } from "../firebase";
 import './stores.css'
+import Popover from "../components/Popover";
 
 
 export default function Store() {
@@ -39,7 +40,11 @@ export default function Store() {
               <div className="col-md-6">
               <div className="card-body outer">
                   <div className="col-md-12 text-center inner">
-            
+                  <div className="d-flex justify-content-end">
+                      {store.curbside === true &&
+                        <Popover />
+                      }
+                    </div>
                     <h4 id={store.brand} className="card-title text-center display-8">{store.name}</h4>
                     <p id={store.info} className="card-text text-center">{store.categories}</p>
                     <p id={store.info} className="card-text text-center"><BsTelephone className="icon" />{store.phone}</p>
