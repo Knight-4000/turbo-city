@@ -7,7 +7,7 @@ export default function Footer() {
 
     return (
         <>
-        <footer className="py-3 my-4">
+        <footer className="py-3 my-1">
             <h1 className='text-center footer-header py-3'>Turbo City</h1>
             <ul className="nav justify-content-center pb-3 mb-3">
                 <li className="footer-link py-2 px-4" onClick={() => navigate('/')}>

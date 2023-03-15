@@ -1,0 +1,33 @@
+.opening{
+    height: 85vh;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/mall-intro.jpg?alt=media&token=865b87af-2800-4b23-abbe-51165612f11e');
+    background-position: 20% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.outer{
+    min-height:100%;
+    display:flex;
+}
+
+.inner{margin: auto;}
+
+.opening-header{
+    font-family: Tangerine;
+    font-size: 72px;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 
+    0 0 15px #FD349C, 0 0 20px #FD349C, 0 0 25px #FD349C, 
+    0 0 30px #FD349C, 0 0 35px #FD349C;
+    z-index: 9999;
+}
+
+.opening-text{
+    font-family: Orbitron;
+    background: linear-gradient(to right, #FD349C 20%, #E334DA 50%, #9D00FF 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 9999;
+}
